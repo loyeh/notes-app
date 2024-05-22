@@ -46,6 +46,7 @@
   display: inline-block;
   margin-left: 2vmin;
   margin-top: 2vmin;
+  overflow: hidden;
 }
 
 .top {
@@ -77,8 +78,13 @@
   resize: none;
   border: none;
   outline: none;
+  font-size: 3vmin;
 }
 
 .active {
   height: 45vmin;
+}
+
+.myText.deActive {
+  display: none;
 }
