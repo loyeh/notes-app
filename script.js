@@ -43,7 +43,10 @@ function deActiveNote(elem) {
   textDiv.textContent = text.value;
   text.classList.toggle("deActive");
   textDiv.classList.toggle("deActive");
-  text.value = textDiv.textContent;
+  localStorage.setItem(`text${elem.id}`, textDiv.textContent);
+  if (localStorage.getItem(`text${elem.id}`)) {
+    text.textContent = localStorage.getItem(`text${elem.id}`);
+  }
   text.focus();
   localStorage.setItem("myHtml", main.innerHTML);
 }
