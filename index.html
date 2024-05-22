@@ -17,26 +17,15 @@
   <body>
     <div class="main">
       <div class="button"><span>+</span> Add Note</div>
-      <div class="container">
+      <div class="container active">
         <div class="top">
           <div class="icons">
-            <i class="fas fa-copy"></i>
-            <i class="fas fa-trash"></i>
+            <i class="fas fa-copy" id="1" onclick="deActiveNote(this)"></i>
+            <i class="fas fa-trash" onclick="deleteNote(this)"></i>
           </div>
         </div>
         <div class="bottom">
-          <textarea name="" id="myText"></textarea>
-        </div>
-      </div>
-      <div class="container">
-        <div class="top">
-          <div class="icons">
-            <i class="fas fa-copy"></i>
-            <i class="fas fa-trash"></i>
-          </div>
-        </div>
-        <div class="bottom">
-          <textarea name="" id="myText"></textarea>
+          <textarea name="" class="myText" id="myText1" autofocus> </textarea>
         </div>
       </div>
     </div>
